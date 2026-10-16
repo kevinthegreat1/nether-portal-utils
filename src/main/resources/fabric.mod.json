@@ -3,17 +3,17 @@
 	"id": "nether-portal-utils",
 	"version": "${version}",
 	"name": "Nether Portal Utils",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Utilities making it easier to work with nether portals",
 	"authors": [
-		"Me!"
+		"Kevinthegreat"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/kevinthegreat1/nether-portal-utils",
+		"sources": "https://github.com/kevinthegreat1/nether-portal-utils"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-3.0-or-later",
 	"icon": "assets/nether-portal-utils/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			{
@@ -29,7 +29,6 @@
 		]
 	},
 	"mixins": [
-		"nether-portal-utils.mixins.json",
 		{
 			"config": "nether-portal-utils.client.mixins.json",
 			"environment": "client"

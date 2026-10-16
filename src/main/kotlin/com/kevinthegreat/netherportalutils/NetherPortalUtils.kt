@@ -9,14 +9,7 @@ object NetherPortalUtils : ModInitializer {
 
 	private val LOGGER = LoggerFactory.getLogger(MOD_ID)
 
-	override fun onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+	override fun onInitialize() {}
 
-		LOGGER.info("Hello Fabric world!")
-	}
-
-	fun id(path: String): Identifier
-		= Identifier.fromNamespaceAndPath(MOD_ID, path)
+	fun id(path: String): Identifier = Identifier.fromNamespaceAndPath(MOD_ID, path)
 }
